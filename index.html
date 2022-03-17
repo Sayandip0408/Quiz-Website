@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizBuzz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 onclick="window.location.href='/index.html';">QuizBuzz</h1>
+    </div>
+    <div class="container">
+        <div class="quiz-image"></div>
+        <div class="welcome">
+            <h1>Welcome to <br> QuizBuzz.netlify.app</h1>
+            <p>Discover new way to learn and practice MCQ for Computer Science Exams. Subject wise MCQ are availabe. Education has no limit.</p>
+        </div>
+    </div>
+    <div class="subject-container">
+        <h1>Computer Science:</h1>
+        <div class="subjects" id="comps1">
+            <h2>C Programming</h2>
+            <p>Over 50+ MCQs. <br> Know your value. <br> Practice Regularly.</p>
+            <button onclick="window.location.href = '/cindex.html';">Attend</button>
+        </div>
+        <div class="subjects" id="comps2">
+            <h2>OOP using C++</h2>
+            <p>Over 50+ MCQs. <br> Know your value. <br> Practice Regularly.</p>
+            <button onclick="window.location.href = '/cppindex.html';">Attend</button>
+        </div>
+        <div class="subjects" id="comps3">
+            <h2>HTML/CSS</h2>
+            <p>Over 50+ MCQs. <br> Know your value. <br> Practice Regularly.</p>
+            <button onclick="window.location.href = '/htmlindex.html';">Attend</button>
+        </div>
+        <div class="subjects" id="comps4">
+            <h2>Data Stucture</h2>
+            <p>Over 50+ MCQs. <br> Know your value. <br> Practice Regularly.</p>
+            <button onclick="notReady()">Attend</button>
+        </div>
+    </div>
+    <script>
+        function notReady(){
+            alert("Questions will be available shortly. Stay Tuned!")
+        }
+    </script>
+</body>
+</html>
